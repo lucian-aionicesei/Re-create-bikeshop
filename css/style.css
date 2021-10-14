@@ -86,13 +86,38 @@ main {
 }
 
 .product_display {
-    width: auto;
-    background-color: white;
-    padding: 15px;
+  width: auto;
+  background-color: white;
+  padding: 15px;
 }
 
 .product_display_img {
-    width: 100%;
-    aspect-ratio: 3/2;
-    object-fit: cover;
+  width: 100%;
+  aspect-ratio: 3/2;
+  object-fit: cover;
+}
+
+.brand_name {
+  font-family: var(--header-font);
+  font-size: 15px;
+  font-weight: bold;
+  color: var(--main-font-color);
+  text-transform: uppercase;
+  margin: 5px 0px 5px 0px;
+}
+
+.product_title {
+  font-family: var(--secondary-font);
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--main-font-color);
+  margin: 0px;
+  padding-bottom: 3px;
+  border-bottom: 1.8px solid rgb(200, 200, 200);
+}
+
+.product_info {
+    
 }
