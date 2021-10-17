@@ -1,6 +1,6 @@
 // fetch data
 
-fetch("http://graphite.dk/bike_shop/wp-json/wp/v2/categories?_fields=name")
+fetch("https://graphite.dk/bike_shop/wp-json/wp/v2/categories?_fields=name")
     .then(function (res) {
         return res.json();
     })
@@ -25,7 +25,7 @@ function showBrand(brand) {
 }
 
 
-fetch("http://graphite.dk/bike_shop/wp-json/wp/v2/product")
+fetch("https://graphite.dk/bike_shop/wp-json/wp/v2/product")
     .then(function (resource) {
         return resource.json();
     })
