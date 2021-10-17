@@ -16,71 +16,37 @@
             <h1 class="logo"><b class="logo_dots">&#183;</b>&nbsp;Bike Stock&nbsp;<b class="logo_dots">&#183;</b></h1>
             <nav class="header_menu">
                 <ul class="menu_options">
-                    Brands we carry - 
-                    <li class="menu_list_item"><a href="#" class="link_styled">Linus</a></li>
-                    /
-                    <li class="menu_list_item"><a href="#" class="link_styled">Brompton</a></li>
-                    /
-                    <li class="menu_list_item"><a href="#" class="link_styled">Christiania</a></li>
-                    /
-                    <li class="menu_list_item"><a href="#" class="link_styled">State</a></li>
+                    Brands we carry -
+                    <template class="listItem_template">
+                        <li class="menu_list_item"><a href="#" class="link_styled">Linus</a></li>
+                    </template>
                 </ul>
             </nav>
             <div class="product_list_content">
-                <article class="product_display">
-                    <img class="product_display_img" src="https://picsum.photos/seed/picsum/400/300" alt="bike">
-                    <p class="brand_name">State</p>
-                    <h2 class="product_title">Warhawk</h2>
-                    <div class="product_info">
-                        <p class="price">Price - <span class="product_price">$579</span></p>
-                        <div class="colours">
-                            <p>Colours - </p>
-                            <div class="colour_choices">
-                                <div class="product_color red"></div>
+                <template class="productdisplay_template">
+                    <article class="product_display">
+                        <img class="product_display_img" src="https://picsum.photos/seed/picsum/400/300" alt="bike">
+                        <p class="brand_name">State</p>
+                        <h2 class="product_title">Warhawk</h2>
+                        <div class="product_info">
+                            <p class="price">Price - <span class="product_price">$579 - $679</span></p>
+                            <div class="colours">
+                                <p>Colours - </p>
+                                <div class="colour_choices">
+                                    <!-- <div class="product_color red"></div> -->
+                                    <p class="not_aplicable">N/A</p>
+                                </div>
                             </div>
+                            <p class="in_stock">In Stock - <span class="in_stock_number">1</span></p>
+                            <a href="#" class="button">Full specs</a>
                         </div>
-                        <p class="in_stock">In Stock - <span class="in_stock_number">1</span></p>
-                        <a href="#" class="button">Full specs</a>
-                    </div>
-                </article>
-                <article class="product_display">
-                    <img class="product_display_img" src="https://picsum.photos/seed/picsum/400/300" alt="bike">
-                    <p class="brand_name">State</p>
-                    <h2 class="product_title">Warhawk</h2>
-                    <div class="product_info">
-                        <p class="price">Price - <span class="product_price">$579</span></p>
-                        <div class="colours">
-                            <p>Colours - </p>
-                            <div class="colour_choices">
-                                <div class="product_color red"></div>
-                            </div>
-                        </div>
-                        <p class="in_stock">In Stock - <span class="in_stock_number">1</span></p>
-                        <a href="#" class="button">Full specs</a>
-                    </div>
-                </article>
-                <article class="product_display">
-                    <img class="product_display_img" src="https://picsum.photos/seed/picsum/400/300" alt="bike">
-                    <p class="brand_name">State</p>
-                    <h2 class="product_title">Warhawk</h2>
-                    <div class="product_info">
-                        <p class="price">Price - <span class="product_price">$579 - $679</span></p>
-                        <div class="colours">
-                            <p>Colours - </p>
-                            <div class="colour_choices">
-                                <!-- <div class="product_color red"></div> -->
-                                <p class="not_aplicable">N/A</p>
-                            </div>
-                        </div>
-                        <p class="in_stock">In Stock - <span class="in_stock_number">1</span></p>
-                        <a href="#" class="button">Full specs</a>
-                    </div>
-                </article>
+                    </article>
+                </template>
             </div>
         </div>
     </main>
     <footer></footer>
-    <script src="/js/source.js"></script>
+    <script src="/js/script.js"></script>
 </body>
 
 </html>
