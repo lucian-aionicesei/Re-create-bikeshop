@@ -14,6 +14,7 @@ body,
 header {
   margin: 0;
   padding: 0;
+  background-color: var(--main-color);
 }
 
 main {
@@ -21,7 +22,12 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100vh;
+  height: fit-content;
+  width: 100%;
+}
+
+.category_comment {
+  width: max-content;
 }
 
 .main_content {
@@ -65,6 +71,7 @@ main {
 .menu_options {
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   padding: 0;
 }
 
@@ -79,9 +86,10 @@ main {
 
 .product_list_content {
   width: 100%;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(330px, 330px));
   justify-content: space-between;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   align-items: center;
 }
 
@@ -150,13 +158,13 @@ main {
   margin-bottom: 20px;
 }
 
-.product_info>*:not(:last-child) {
+.product_info > *:not(:last-child) {
   margin-top: 18px;
   margin-bottom: 0;
   border-bottom: 1px solid #eeeeee;
 }
 
-.colours>* {
+.colours > * {
   padding: 0;
   margin: 0;
 }
@@ -178,6 +186,7 @@ main {
   display: flex;
   margin-left: 10px;
   color: black;
+  font-weight: 500;
 }
 
 .colours {
@@ -188,3 +197,67 @@ main {
   margin: 0;
 }
 
+@media only screen and (max-width: 1160px) {
+
+  .main_content {
+    width: auto;
+    /* background-color: cadetblue; */
+  }
+
+  .product_list_content {
+    justify-content: flex-start;
+    grid-column-gap: 5vw;
+    /* flex-wrap: wrap; */
+  }
+}
+
+@media only screen and (max-width: 760px) {
+
+  .logo {
+    font-size: 20px;
+  }
+
+  .menu_options {
+    font-size: 18px;
+  }
+
+  .product_list_content {
+    grid-template-columns: repeat(auto-fit, minmax(430px, 430px));
+    justify-content: center;
+  }
+
+  .product_display{
+    width: 400px;
+    margin: 5vw 0px 5vw 0px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+
+  .main_content {
+    padding: 6vw;
+  }
+
+  
+  .logo {
+    font-size: 16px;
+  }
+
+  .product_title {
+    font-size: 16px;
+  }
+
+  .menu_options {
+    font-size: 16px;
+  }
+
+  .product_display{
+    width: 100%;
+  }
+
+  .product_list_content {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+}
